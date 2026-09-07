@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Encore7</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Encore7</a>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="consultation.html">Consultation</a>
+                    <a href="data-management.html">Data Management</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Let's Find Your Fit</h1>
+            <p>Tell us where your IT stands today. We'll tell you exactly where the gaps are. No obligation.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container" style="max-width: 600px;">
+            <div class="card">
+                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                    <div style="margin-bottom: 15px;">
+                        <label for="name" style="display: block; margin-bottom: 5px;">Name</label>
+                        <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="email" style="display: block; margin-bottom: 5px;">Email</label>
+                        <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="service" style="display: block; margin-bottom: 5px;">Interested In</label>
+                        <select id="service" name="service" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                            <option value="Consultation">IT Consultation</option>
+                            <option value="Data Management">Data Management</option>
+                            <option value="Managed Services">Managed Services</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="message" style="display: block; margin-bottom: 5px;">Message</label>
+                        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; cursor: pointer;">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Encore7. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
