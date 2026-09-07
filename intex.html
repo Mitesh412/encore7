@@ -3,400 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encore7 | Tailored IT Solutions</title>
-    <style>
-        :root {
-            --primary: #2c3e50;
-            --accent: #3498db;
-            --light: #f4f7f6;
-            --text: #333;
-            --white: #ffffff;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-            background-color: var(--white);
-        }
-
-        /* Layout */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section {
-            padding: 60px 0;
-        }
-
-        /* Header */
-        header {
-            background: var(--primary);
-            color: var(--white);
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--white);
-            text-decoration: none;
-        }
-
-        .nav-links a {
-            color: var(--white);
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 0.9rem;
-        }
-
-        /* Hero */
-        .hero {
-            background: var(--light);
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--primary);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: var(--white);
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-
-        .btn:hover {
-            background: #2980b9;
-        }
-
-        /* Sections */
-        h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 40px;
-            color: var(--primary);
-        }
-
-        /* Grid Layouts */
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 40px;
-        }
-
-        /* Cards */
-        .card {
-            background: var(--white);
-            border: 1px solid #eee;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: var(--accent);
-        }
-
-        .card h3 {
-            margin-top: 0;
-            color: var(--primary);
-        }
-
-        .badge {
-            display: inline-block;
-            background: #e8f6f3;
-            color: #1abc9c;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            background: var(--primary);
-            color: var(--white);
-        }
-
-        .testimonials h2 {
-            color: var(--white);
-        }
-
-        .testimonial-card {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 8px;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
-            font-style: normal;
-            font-size: 0.9rem;
-            color: #ccc;
-        }
-
-        /* Footer */
-        footer {
-            background: #222;
-            color: #aaa;
-            text-align: center;
-            padding: 40px 0;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 1.8rem; }
-            .grid-2, .grid-3 { grid-template-columns: 1fr; }
-        }
-    </style>
+    <title>Encore7 | IT Consultation & Data Management</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">Encore7</a>
+                <a href="index.html" class="logo">Encore7</a>
                 <div class="nav-links">
-                    <a href="#services">Services</a>
-                    <a href="#models">Delivery</a>
-                    <a href="#testimonials">Reviews</a>
-                    <a href="#contact" class="btn" style="margin-left: 20px; padding: 8px 16px;">Contact Us</a>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="consultation.html">Consultation</a>
+                    <a href="data-management.html">Data Management</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Tailored IT Solutions.<br>Not a one-size-fits-all package.</h1>
-            <p>Encore7 builds managed IT and cybersecurity around how your business actually runs: on-premise, cloud, hybrid, or somewhere in between.</p>
-            <a href="#contact" class="btn">Let's find your fit</a>
+            <h1>Transform Your Business with Expert IT Consultation</h1>
+            <p>Encore7 delivers strategic IT guidance, robust data management, and managed services tailored to your unique business goals.</p>
+            <div style="margin-top: 20px;">
+                <a href="consultation.html" class="btn">Get Consulted</a>
+                <a href="data-management.html" class="btn btn-outline" style="margin-left: 10px;">View Data Solutions</a>
+            </div>
         </div>
     </section>
 
-    <!-- Certification Section -->
     <section>
         <div class="container">
             <div class="grid-2">
-                <div>
-                    <h2>Independently Certified. Not Self-Reported.</h2>
-                    <p><strong>Encore7 is independently certified through the Business Advantage Program.</strong></p>
-                    <ul>
-                        <li><strong>Third-Party Verified:</strong> An independent audit confirmed our security posture meets the standard insurance carriers require.</li>
-                        <li><strong>Lower Insurance Costs:</strong> Carriers recognize our certification, offering discounts of up to <strong>35%</strong> on cyber insurance premiums.</li>
-                        <li><strong>Guaranteed Security:</strong> If our certified services don't perform as warranted, our backing program pays directly—no lawyers, no lengthy claims.</li>
-                    </ul>
+                <div class="card">
+                    <h3>Strategic IT Consultation</h3>
+                    <p>Stop guessing. Start planning. Our consultants analyze your current infrastructure and provide a roadmap for digital transformation, security, and efficiency.</p>
                 </div>
-                <div class="card" style="background: #f9f9f9; border: none;">
-                    <h3>Why this matters to you</h3>
-                    <p>We don't just promise security; we prove it. Your insurance carrier knows the difference between a self-reported claim and an independent audit.</p>
+                <div class="card">
+                    <h3>Enterprise Data Management</h3>
+                    <p>Secure, scalable, and compliant. We manage your data lifecycle from backup and recovery to cloud migration and AI governance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" style="background: #f4f7f6;">
+    <section style="background: var(--light);">
         <div class="container">
-            <h2>Eight Services. One Accountable Partner.</h2>
+            <h2>Why Encore7?</h2>
             <div class="grid-3">
                 <div class="card">
-                    <h3>Managed IT Services</h3>
-                    <p>Day-to-day IT management and help desk support, so your systems and your team just work.</p>
+                    <h3>🎯 Tailored Strategy</h3>
+                    <p>No one-size-fits-all packages. We build solutions around how your business actually runs.</p>
                 </div>
                 <div class="card">
-                    <h3>Cybersecurity & Response</h3>
-                    <p>Proactive threat detection, monitoring, and response so a security incident doesn't become a headline.</p>
+                    <h3>🛡️ Security First</h3>
+                    <p>Compliance-focused architecture for Healthcare, Finance, Legal, and more.</p>
                 </div>
                 <div class="card">
-                    <h3>Cloud Solutions</h3>
-                    <p>Cloud and hosted infrastructure that scales with your business, without the upfront hardware spend.</p>
-                </div>
-                <div class="card">
-                    <h3>Backup & Disaster Recovery</h3>
-                    <p>A tested safety net for your data and systems, so an outage or ransomware event doesn't sink the business.</p>
-                </div>
-                <div class="card">
-                    <h3>VOIP & UCaaS</h3>
-                    <p>Modern business phone and unified communications that work from the office, home, or the road.</p>
-                </div>
-                <div class="card">
-                    <h3>AI Governance & Security</h3>
-                    <p>Helping your team adopt AI tools without putting client data, compliance, or trust on the line.</p>
-                </div>
-                <div class="card">
-                    <h3>IT Projects & Consulting</h3>
-                    <p>Strategic guidance and hands-on project delivery for migrations, builds, and growth.</p>
-                </div>
-                <div class="card">
-                    <h3>Print Management</h3>
-                    <p>Printer and copier fleet management that keeps supplies stocked and print costs predictable.</p>
+                    <h3>🚀 Scalable Growth</h3>
+                    <p>Infrastructure that grows with you, whether on-premise, cloud, or hybrid.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Delivery Models -->
-    <section id="models">
+    <footer>
         <div class="container">
-            <h2>One Size Never Fits All</h2>
-            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">We mix and match delivery models instead of forcing your business into a fixed package, so the fit is exactly right.</p>
-            <div class="grid-2">
-                <div class="card">
-                    <h3>On-Premise</h3>
-                    <p>Infrastructure you own and control, fully supported.</p>
-                </div>
-                <div class="card">
-                    <h3>Cloud-Based</h3>
-                    <p>Scalable platforms with no upfront hardware spend.</p>
-                </div>
-                <div class="card">
-                    <h3>Managed Service</h3>
-                    <p>We handle day-to-day IT so your team doesn't have to.</p>
-                </div>
-                <div class="card">
-                    <h3>Co-Managed</h3>
-                    <p>We work alongside your existing in-house IT team.</p>
-                </div>
-                <div class="card">
-                    <h3>Consulting & Advisory</h3>
-                    <p>Strategic guidance for planning and decision-making.</p>
-                </div>
-                <div class="card">
-                    <h3>Project-Based</h3>
-                    <p>Defined-scope work delivered on time, on budget.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2>What Clients Say</h2>
-            <div class="grid-3">
-                <div class="testimonial-card">
-                    "Encore7 provides great service and insightful solutions! Highly recommend reaching out to them!"
-                    <span class="testimonial-author">— Google Review</span>
-                </div>
-                <div class="testimonial-card">
-                    "They are very knowledgeable and easy to work with. Trustworthy, efficient, and responsive!"
-                    <span class="testimonial-author">— Google Review</span>
-                </div>
-                <div class="testimonial-card">
-                    "Saved the day when I was having problems with my email and software programs. Got me back to work!"
-                    <span class="testimonial-author">— Google Review</span>
-                </div>
-                <div class="testimonial-card">
-                    "These guys have always come through with IT help. Installing new computers, LAN, Firewalls, Cyber help, they are the Go To guys!"
-                    <span class="testimonial-author">— Google Review</span>
-                </div>
-                <div class="testimonial-card">
-                    "My computer was hacked. Worked with them, they resolved the issue in a timely manner and now I feel secure."
-                    <span class="testimonial-author">— Google Review</span>
-                </div>
-                <div class="testimonial-card">
-                    "Timely and budget-friendly manner! Would absolutely recommend them and their team!"
-                    <span class="testimonial-author">— Google Review</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Industry Compliance -->
-    <section>
-        <div class="container">
-            <h2>IT That Speaks Your Industry</h2>
-            <div class="grid-3">
-                <div>
-                    <h4>Healthcare</h4>
-                    <p>HIPAA Security Rule · PHI in AI tools</p>
-                </div>
-                <div>
-                    <h4>Financial Services</h4>
-                    <p>GLBA Safeguards Rule · Client financial data exposure</p>
-                </div>
-                <div>
-                    <h4>Legal</h4>
-                    <p>ABA Rule 1.6 confidentiality · Client data in AI tools</p>
-                </div>
-                <div>
-                    <h4>Insurance</h4>
-                    <p>FTC Safeguards Rule · GLBA · E&O exposure</p>
-                </div>
-                <div>
-                    <h4>Real Estate</h4>
-                    <p>Wire fraud exposure · Client PII in transaction platforms</p>
-                </div>
-                <div>
-                    <h4>Education</h4>
-                    <p>FERPA · Student data in AI tools</p>
-                </div>
-                <div>
-                    <h4>Construction</h4>
-                    <p>Drawings & specs in AI tools · Prime contractor flow-downs</p>
-                </div>
-                <div>
-                    <h4>Trades</h4>
-                    <p>Electrical · HVAC · Plumbing</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact / Footer -->
-    <footer id="contact">
-        <div class="container">
-            <h2 style="color: white; margin-bottom: 20px;">Let's find your fit.</h2>
-            <p>Tell us where your IT stands today. We'll tell you exactly where the gaps are.</p>
-            <p>No obligation.</p>
-            <br>
-            <a href="mailto:contact@encore7.com" class="btn">Contact Encore7</a>
-            <br><br><br>
             <p>&copy; 2026 Encore7. All Rights Reserved.</p>
         </div>
     </footer>
-
 </body>
 </html>
