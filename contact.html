@@ -1,69 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Encore7</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="logo">Encore7</a>
-                <div class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="consultation.html">Consultation</a>
-                    <a href="data-management.html">Data Management</a>
-                    <a href="services.html">Services</a>
-                    <a href="contact.html" class="active">Contact</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+<!-- CONTACT SECTION START -->
+<section id="contact" style="background-color: #f9f9f9; padding: 60px 20px; font-family: 'Arial', sans-serif;">
+  <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center; color: #333; margin-bottom: 10px;">Get a Free Consultation</h2>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">Fill out the form below, and our team will respond within 24 hours.</p>
 
-    <section class="hero">
-        <div class="container">
-            <h1>Let's Find Your Fit</h1>
-            <p>Tell us where your IT stands today. We'll tell you exactly where the gaps are. No obligation.</p>
-        </div>
-    </section>
+    <!-- FORM START: Replace 'YOUR_FORMSPREE_ID' with your actual ID -->
+    <form action="https://formspree.io/f/mzebjolv" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
+      
+      <div>
+        <label for="name" style="display: block; margin-bottom: 5px; font-weight: bold; color: #444;">Full Name</label>
+        <input type="text" id="name" name="name" required 
+               style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;"
+               placeholder="Jane Doe">
+      </div>
 
-    <section>
-        <div class="container" style="max-width: 600px;">
-            <div class="card">
-                <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
-                    <div style="margin-bottom: 15px;">
-                        <label for="name" style="display: block; margin-bottom: 5px;">Name</label>
-                        <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" required>
-                    </div>
-                    <div style="margin-bottom: 15px;">
-                        <label for="email" style="display: block; margin-bottom: 5px;">Email</label>
-                        <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" required>
-                    </div>
-                    <div style="margin-bottom: 15px;">
-                        <label for="service" style="display: block; margin-bottom: 5px;">Interested In</label>
-                        <select id="service" name="service" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
-                            <option value="Consultation">IT Consultation</option>
-                            <option value="Data Management">Data Management</option>
-                            <option value="Managed Services">Managed Services</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <div style="margin-bottom: 15px;">
-                        <label for="message" style="display: block; margin-bottom: 5px;">Message</label>
-                        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;" required></textarea>
-                    </div>
-                    <button type="submit" class="btn" style="width: 100%; cursor: pointer;">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+      <div>
+        <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold; color: #444;">Email Address</label>
+        <input type="email" id="email" name="email" required 
+               style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;"
+               placeholder="jane@company.com">
+      </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Encore7. All Rights Reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+      <div>
+        <label for="company" style="display: block; margin-bottom: 5px; font-weight: bold; color: #444;">Company Name (Optional)</label>
+        <input type="text" id="company" name="company" 
+               style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;"
+               placeholder="Acme Corp">
+      </div>
+
+      <div>
+        <label for="service" style="display: block; margin-bottom: 5px; font-weight: bold; color: #444;">Interested In</label>
+        <select id="service" name="service" required
+                style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;">
+          <option value="" disabled selected>Select a service...</option>
+          <option value="Digital Transformation">Digital Transformation</option>
+          <option value="Cybersecurity Audit">Cybersecurity Audit</option>
+          <option value="General Inquiry">General Inquiry</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message" style="display: block; margin-bottom: 5px; font-weight: bold; color: #444;">Message</label>
+        <textarea id="message" name="message" rows="5" required
+                  style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;"
+                  placeholder="Tell us about your project or security needs..."></textarea>
+      </div>
+
+      <!-- Hidden fields for better organization in your inbox -->
+      <input type="hidden" name="_subject" value="New Website Lead - Encore7">
+      <input type="hidden" name="_cc" value="your-email@example.com"> <!-- Optional: Send a copy to you automatically -->
+
+      <button type="submit" 
+              style="background-color: #0056b3; color: white; padding: 14px; border: none; border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s;">
+        Send Message
+      </button>
+      
+      <p style="text-align: center; font-size: 0.8em; color: #999; margin-top: 15px;">
+        By clicking "Send Message", you agree to our Privacy Policy.
+      </p>
+    </form>
+    <!-- FORM END -->
+
+  </div>
+</section>
+<!-- CONTACT SECTION END -->
